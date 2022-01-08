@@ -1,3 +1,12 @@
+packer {
+  required_plugins {
+    vmware = {
+      version = ">= 1.0.5"
+      source  = "github.com/hashicorp/vmware"
+    }
+  }
+}
+
 source "vmware-iso" "ubuntu-impish" {
   iso_url = "https://cdimage.ubuntu.com/releases/21.10/release/ubuntu-21.10-live-server-arm64.iso"
   iso_checksum = "md5:5420a741f41927ce9ddac768b69181c7"
@@ -29,9 +38,15 @@ build {
   sources = ["sources.vmware-iso.ubuntu-impish"]
 
   provisioner "shell" {
+    script = "vmware-cleanup.sh"
+  }
+
+  provisioner "shell-local" {
     inline = [
-      "sudo apt update",
-      "sudo apt upgrade -y"
+      "cp ../metadata.json .",
+      "tar cvzf vmware-impish-arm64.box ./*",
+      "md5 vmware-impish-arm64.box",
+      "rm -f *.v* *.nvram metadata.json"
     ]
   }
 }
