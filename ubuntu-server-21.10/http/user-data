@@ -16,5 +16,7 @@ autoinstall:
         allow-pw: true
     package_update: true
     package_upgrade: true
+    packages: 
+        - open-vm-tools
     late-commands:
         - echo 'vagrant ALL=(ALL) NOPASSWD:ALL' > /target/etc/sudoers.d/ubuntu
