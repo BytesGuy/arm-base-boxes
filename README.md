@@ -7,8 +7,8 @@ The pre-built boxes can be found on [Vagrant Cloud](https://app.vagrantup.com/by
 
 🚨 These should not be used for production workloads - use them at your own risk! 🚨
 
-Currently supported:
+## Currently Support Boxes
 
 | Distro | Version | Provider | Source | Box |
 | ------ | ------- | -------- | ------ | --- |
-| Ubuntu Server | 21.10 | VMWare Fusion | [Source](ubuntu-server-21.10/vmware-impish.pkr.hcl) | [bytesguy/ubuntu-server-21.10-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-21.10-arm64) |
+| Ubuntu Server | 21.10 (Impish Indri) | VMWare Fusion | [Source](ubuntu-server-21.10/) | [bytesguy/ubuntu-server-21.10-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-21.10-arm64) |
