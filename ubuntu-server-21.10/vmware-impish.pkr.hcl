@@ -32,6 +32,7 @@ source "vmware-iso" "ubuntu-impish" {
   cpus = 2
   disk_size = 40000
   vm_name = "Ubuntu Server 21.10"
+  output_directory = "output"
 }
 
 build {
@@ -43,10 +44,10 @@ build {
 
   provisioner "shell-local" {
     inline = [
-      "cp ../metadata.json .",
-      "tar cvzf vmware-impish-arm64.box ./*",
-      "md5 vmware-impish-arm64.box",
-      "rm -f *.v* *.nvram metadata.json"
+      "cp metadata.json output/metadata.json",
+      "tar cvzf output/vmware-impish-arm64.box output/*",
+      "md5 output/vmware-impish-arm64.box",
+      "rm -f output/*.v* output/*.nvram output/metadata.json"
     ]
   }
 }
