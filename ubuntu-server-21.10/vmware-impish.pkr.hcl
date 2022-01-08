@@ -39,6 +39,9 @@ build {
   sources = ["sources.vmware-iso.ubuntu-impish"]
 
   provisioner "shell" {
-    script = "vmware-cleanup.sh"
+    scripts = [
+      "add-key.sh",
+      "vmware-cleanup.sh"
+    ]
   }
 }
