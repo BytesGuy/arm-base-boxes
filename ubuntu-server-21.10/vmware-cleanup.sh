@@ -2,7 +2,7 @@
 
 sudo apt clean
 sudo e4defrag /
-dd if=/dev/zero of=/EMPTY bs=1M
-rm -f /EMPTY
+sudo dd if=/dev/zero of=/EMPTY bs=1M
+sudo rm -f /EMPTY
 sync
 sudo vmware-toolbox-cmd disk shrink /
