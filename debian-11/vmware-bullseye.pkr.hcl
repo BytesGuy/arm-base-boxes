@@ -28,6 +28,9 @@ source "vmware-iso" "debian-bullseye" {
         "<enter><wait>"
   ]
   usb = true
+  vmx_data = {
+    "usb_xhci.present" = "true"
+  }
   memory = 2048
   cpus = 2
   disk_size = 40000
