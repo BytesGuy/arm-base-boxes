@@ -13,12 +13,13 @@ The pre-built boxes can be found on [Vagrant Cloud](https://app.vagrantup.com/by
 | ------ | ------- | -------- | ------ | --- |
 | Ubuntu Server | 20.04.3 (Focal Fossa) | VMWare Fusion | [Source](ubuntu-server-20.04/) | [bytesguy/ubuntu-server-20.04-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-20.04-arm64) |
 | Ubuntu Server | 21.10 (Impish Indri) | VMWare Fusion | [Source](ubuntu-server-21.10/) | [bytesguy/ubuntu-server-21.10-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-21.10-arm64) |
+| Debian | 11.2 (Bullseye) | VMWare Fusion | [Source](debian-11/) | [bytesguy/debian-11-arm64](https://app.vagrantup.com/bytesguy/boxes/debian-11-arm64) |
 
 ## In-Progress / Planned
 
 | Distro | Version | Provider | Source |
 | ------ | ------- | -------- | ------ |
-| Debian | 11.2 (Bullseye) | VMWare Fusion | [Source](debian-11/) |
+| Centos | 9 Stream | VMWare Fusion | |
 
 ## Usage Instructions
 
