@@ -6,4 +6,4 @@ cp metadata.json output/metadata.json
 cd output
 tar cvzf vmware-bullseye-arm64.box ./*
 md5 vmware-bullseye-arm64.box
-rm -f *.v* *.nvram metadata.json
+rm -rf *.v* *.nvram metadata.json
