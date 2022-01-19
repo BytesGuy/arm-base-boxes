@@ -20,7 +20,9 @@ The pre-built boxes can be found on [Vagrant Cloud](https://app.vagrantup.com/by
 
 | Distro | Version | Provider | Source |
 | ------ | ------- | -------- | ------ |
-| Centos | 9 Stream | VMWare Fusion | |
+| Centos | 9 Stream | VMWare Fusion | [Source](centos-9/) |
+| Fedora | 35 | VMWare Fusion | [Source](fedora-35/) |
+| FreeBSD | 14 | VMWare Fusion | [Source](freebsd-14/) |
 
 ## Usage Instructions
 
