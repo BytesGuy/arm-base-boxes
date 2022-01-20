@@ -12,8 +12,6 @@ source "vmware-iso" "centos-9" {
   # As Stream is updated daily we skip the checksum by default
   # buildbox script can pull the latest checksum for verfication if required
   iso_checksum = "none"
-  # We don't want to cache as the image gets updated often
-  cleanup_remote_cache = true
   ssh_username = "vagrant"
   ssh_password = "vagrant"
   ssh_timeout = "30m"
@@ -32,6 +30,10 @@ source "vmware-iso" "centos-9" {
         "<enter><wait>"
   ]
   usb = true
+  vmx_data = {
+    "usb_xhci.present" = "true",
+    "ethernet0.virtualdev" = "e1000e"
+  }
   memory = 2048
   cpus = 2
   disk_size = 40000
