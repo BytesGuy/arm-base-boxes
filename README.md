@@ -20,6 +20,7 @@ The pre-built boxes can be found on [Vagrant Cloud](https://app.vagrantup.com/by
 
 | Distro | Version | Provider | Source |
 | ------ | ------- | -------- | ------ |
+| Ubuntu Server | 20.04 | Parallels | [Source](ubuntu-server-20.04/) |
 | Ubuntu Server | 22.04 | VMWare Fusion | [Source](ubuntu-server-22.04/) |
 | Centos | 9 Stream | VMWare Fusion | [Source](centos-9/) |
 | Fedora | 35 | VMWare Fusion | [Source](fedora-35/) |
