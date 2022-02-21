@@ -12,6 +12,7 @@ The pre-built boxes can be found on [Vagrant Cloud](https://app.vagrantup.com/by
 | Distro | Version | Provider | Source | Box |
 | ------ | ------- | -------- | ------ | --- |
 | Ubuntu Server | 20.04.3 (Focal Fossa) | VMWare Fusion | [Source](ubuntu-server-20.04/) | [bytesguy/ubuntu-server-20.04-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-20.04-arm64) |
+| Ubuntu Server | 20.04.3 (Focal Fossa) | Parallels | [Source](ubuntu-server-20.04/) | [bytesguy/ubuntu-server-20.04-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-20.04-arm64) |
 | Ubuntu Server | 21.10 (Impish Indri) | VMWare Fusion | [Source](ubuntu-server-21.10/) | [bytesguy/ubuntu-server-21.10-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-21.10-arm64) |
 | Debian | 11.2 (Bullseye) | VMWare Fusion | [Source](debian-11/) | [bytesguy/debian-11-arm64](https://app.vagrantup.com/bytesguy/boxes/debian-11-arm64) |
 | Debian | 10.11 (Buster) | VMWare Fusion | [Source](debian-10/) | [bytesguy/debian-10-arm64](https://app.vagrantup.com/bytesguy/boxes/debian-10-arm64) |
@@ -20,7 +21,6 @@ The pre-built boxes can be found on [Vagrant Cloud](https://app.vagrantup.com/by
 
 | Distro | Version | Provider | Source |
 | ------ | ------- | -------- | ------ |
-| Ubuntu Server | 20.04 | Parallels | [Source](ubuntu-server-20.04/) |
 | Ubuntu Server | 22.04 | VMWare Fusion | [Source](ubuntu-server-22.04/) |
 | Centos | 9 Stream | VMWare Fusion | [Source](centos-9/) |
 | Fedora | 35 | VMWare Fusion | [Source](fedora-35/) |
