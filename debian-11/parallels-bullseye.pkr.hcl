@@ -1,13 +1,11 @@
 source "parallels-iso" "debian-bullseye" {
-  iso_url = "https://cdimage.debian.org/debian-cd/current/arm64/iso-cd/debian-11.2.0-arm64-netinst.iso"
-  iso_checksum = "md5:f7be9e4eeb6de6e848ee1c75dece83be"
+  iso_url = "https://cdimage.debian.org/debian-cd/current/arm64/iso-cd/debian-11.3.0-arm64-netinst.iso"
+  iso_checksum = "md5:1fb24715f545447aff432e543436e57d"
   ssh_username = "vagrant"
   ssh_password = "vagrant"
   ssh_timeout = "30m"
   shutdown_command = "sudo shutdown -h now"
   guest_os_type = "debian"
-  # disk_adapter_type = "nvme"
-  # version = 19
   http_directory = "http"
   boot_command = [
         "c",
@@ -18,10 +16,6 @@ source "parallels-iso" "debian-bullseye" {
         "boot",
         "<enter><wait>"
   ]
-  # usb = true
-  # vmx_data = {
-  #   "usb_xhci.present" = "true"
-  # }
   memory = 2048
   cpus = 2
   disk_size = 40000
