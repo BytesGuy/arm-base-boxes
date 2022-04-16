@@ -21,7 +21,9 @@ source "parallels-iso" "debian-bullseye" {
   disk_size = 40000
   vm_name = "Debian 11"
   output_directory = "output"
-  parallels_tools_flavor = "lin"
+  parallels_tools_flavor = "lin-arm"
+  parallels_tools_mode = "upload"
+  parallels_tools_guest_path = "/tmp/prltools.iso"
 }
 
 build {
