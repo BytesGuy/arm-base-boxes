@@ -9,7 +9,7 @@ packer {
 
 source "vmware-iso" "ubuntu-jammy" {
   iso_url = "https://cdimage.ubuntu.com/releases/22.04/release/ubuntu-22.04-live-server-arm64.iso"
-  iso_checksum = "md5:TBC"
+  iso_checksum = "md5:4dcafe2e69d6d0a8979cb4eb7c26c3fd"
   ssh_username = "vagrant"
   ssh_password = "vagrant"
   ssh_timeout = "30m"
