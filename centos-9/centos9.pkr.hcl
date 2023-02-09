@@ -14,6 +14,8 @@ locals {
       vm_guest_os_language     = var.vm_guest_os_language
       vm_guest_os_keyboard     = var.vm_guest_os_keyboard
       vm_guest_os_timezone     = var.vm_guest_os_timezone
+      vm_guest_os_install_url  = var.vm_guest_os_install_url
+      vm_guest_os_repo_url     = var.vm_guest_os_repo_url
     })
   }
 }
@@ -73,7 +75,7 @@ source "vmware-iso" "centos-9" {
     "<up>",
     "e",
     "<down><down><end><wait>",
-    "text inst.ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg",
+    "<spacebar>text inst.ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg",
     "<enter><wait><leftCtrlOn>x<leftCtrlOff>"
   ]
 }

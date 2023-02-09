@@ -18,6 +18,18 @@ variable "vm_guest_os_timezone" {
   default     = "Europe/London"
 }
 
+variable "vm_guest_os_install_url" {
+  type        = string
+  description = "Guest OS install URL"
+  default     = "https://mirror.stream.centos.org/9-stream/BaseOS/aarch64/os/"
+}
+
+variable "vm_guest_os_repo_url" {
+  type        = string
+  description = "Guest OS repo URL"
+  default     = "https://mirror.stream.centos.org/9-stream/AppStream/aarch64/os/"
+}
+
 // https://developer.hashicorp.com/packer/plugins/builders/vmware/iso#disk_size
 variable "disk_size" {
   type        = number
