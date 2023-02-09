@@ -34,8 +34,8 @@ variable "vm_guest_os_repo_url" {
 variable "disk_size" {
   type        = number
   description = "Size of the disk in MB"
-  // ~20GB
-  default = 20000
+  // ~40GB
+  default = 40000
 }
 
 // https://developer.hashicorp.com/packer/plugins/builders/vmware/iso#guest_os_type
