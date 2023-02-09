@@ -43,8 +43,8 @@ This repository provides packer files for building Vagrant base boxes for ARM ho
 
 ## Usage
 
-1. Use the `buildbox.sh` script in each directory to build the box and add it to Vagrant:
+Use the `buildbox.sh` script in each directory to build the box and add it to Vagrant:
 
-    ```bash
-    ./buildbox.sh
-    ```
+```bash
+./buildbox.sh
+```
