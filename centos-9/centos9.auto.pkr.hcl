@@ -1,4 +1,5 @@
 // centos9 packer variables file
+
 variable "vm_guest_os_language" {
   type        = string
   description = "Guest OS language"

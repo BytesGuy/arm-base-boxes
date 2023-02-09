@@ -10,10 +10,10 @@ packer {
 
 locals {
   data_source_content = {
-    "/ks.cfg" = templatefile("${abspath(path.root)}/http/ks.pkrtpl.hcl", {
-      vm_guest_os_language = var.vm_guest_os_language
-      vm_guest_os_keyboard = var.vm_guest_os_keyboard
-      vm_guest_os_timezone = var.vm_guest_os_timezone
+    "/ks.cfg" = templatefile("${abspath(path.root)}/data/ks.pkrtpl.hcl", {
+      vm_guest_os_language     = var.vm_guest_os_language
+      vm_guest_os_keyboard     = var.vm_guest_os_keyboard
+      vm_guest_os_timezone     = var.vm_guest_os_timezone
     })
   }
 }
