@@ -56,7 +56,7 @@ variable "vmx_hardware_version" {
 variable "vm_name" {
   type        = string
   description = "VM name"
-  default     = "centos9 stream"
+  default     = "centos9"
 }
 
 // https://developer.hashicorp.com/packer/plugins/builders/vmware/iso#extra-disk-configuration
