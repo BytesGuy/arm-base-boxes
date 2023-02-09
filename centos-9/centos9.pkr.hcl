@@ -65,8 +65,8 @@ source "vmware-iso" "centos-9" {
 
   // SSH configuration
   // https://developer.hashicorp.com/packer/plugins/builders/vmware/iso#optional-ssh-fields
-  ssh_username = var.ssh_username
-  ssh_password = var.ssh_password
+  ssh_username = "vagrant"
+  ssh_password = "vagrant"
   ssh_timeout  = var.ssh_timeout
 
   // Boot configuration

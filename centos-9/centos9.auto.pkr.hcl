@@ -99,18 +99,6 @@ variable "memory" {
 }
 
 // https://developer.hashicorp.com/packer/plugins/builders/vmware/iso#optional-ssh-fields
-variable "ssh_username" {
-  type        = string
-  description = "SSH username"
-  default     = "vagrant"
-}
-
-variable "ssh_password" {
-  type        = string
-  description = "SSH password"
-  default     = "vagrant"
-}
-
 variable "ssh_timeout" {
   type        = string
   description = "SSH timeout"
