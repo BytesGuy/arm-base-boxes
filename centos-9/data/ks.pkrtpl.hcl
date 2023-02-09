@@ -1,4 +1,5 @@
 # Kickstart file for CentOS 9 Stream
+reboot
 text --non-interactive
 eula --agreed
 
@@ -21,6 +22,7 @@ repo --name=centos9-AppStream --baseurl=${vm_guest_os_repo_url}
 %packages
 @^minimal-environment
 open-vm-tools
+wget
 %end
 
 # Run the setup agent on first boot
