@@ -70,7 +70,7 @@ variable "iso_checksum" {
 
 variable "iso_url" {
   type    = string
-  default = "https://cdimage.ubuntu.com/releases/22.04/release/ubuntu-22.04.1-live-server-arm64.iso"
+  default = "https://cdimage.ubuntu.com/releases/22.04/release/ubuntu-22.04.2-live-server-arm64.iso"
 }
 
 // https://developer.hashicorp.com/packer/plugins/builders/vmware/iso#hardware-configuration
