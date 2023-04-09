@@ -26,6 +26,7 @@ autoinstall:
     - curtin in-target --target=/target -- chmod 700 /home/vagrant/.ssh
     - curtin in-target --target=/target -- wget -O /home/vagrant/.ssh/authorized_keys https://raw.githubusercontent.com/hashicorp/vagrant/main/keys/vagrant.pub
     - curtin in-target --target=/target -- chmod 644 /home/vagrant/.ssh/authorized_keys
+    - curtin in-target --target=/target -- chown -R vagrant:vagrant /home/vagrant/
     - curtin in-target --target=/target -- dd if=/dev/zero of=/EMPTY bs=1M || true
     - curtin in-target --target=/target -- rm -f /EMPTY
     - curtin in-target --target=/target -- sync
