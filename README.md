@@ -2,15 +2,16 @@
 
 Vagrant base boxes for ARM hosts (e.g., Apple Silicon M1).
 
-This repository provides packer files for building Vagrant base boxes for ARM hosts.
+This repository contains Packer files for building Vagrant base boxes for ARM hosts.
 
-🚨 These should not be used for production workloads - use them at your own risk! 🚨
+🚨 These Vagrant boxes should not be used for production workloads - use them at your own risk! 🚨
 
 ## Supported Boxes
 
-| Distro          | Version | Provider      | Source             |
-| --------------- | ------- | ------------- | ------------------ |
-| CentOS 9 Stream | 9       | VMWare Fusion | [Source](centos-9) |
+| Distro          | Version | Provider      | Source                        |
+| --------------- | ------- | ------------- | ----------------------------- |
+| CentOS 9 Stream | 9       | VMWare Fusion | [Source](centos-9)            |
+| Ubuntu Server   | 22.04.2 | VMWare Fusion | [Source](ubuntu-server-22.04) |
 
 ## Dependencies
 
