@@ -7,7 +7,7 @@ packer build -force .
 # Copy Vagrant metadata file to artifacts directory
 cp metadata.json artifacts/metadata.json && cd artifacts
 # Create Vagrant box
-tar cvzf $BOX_NAME ./*
+tar -cvzf $BOX_NAME ./*
 # Show the SHA256 checksum of the box
 shasum -a 256 $BOX_NAME
 # Clean up
