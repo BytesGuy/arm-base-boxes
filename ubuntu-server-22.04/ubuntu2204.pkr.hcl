@@ -65,7 +65,7 @@ source "vmware-iso" "ubuntu-server-2204" {
   // https://developer.hashicorp.com/packer/plugins/builders/vmware/iso#boot-configuration
   boot_command = [
     "c",
-    "linux /casper/vmlinuz modprobe.blacklist=vmwgfx \"ds=nocloud-net;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/\" --- autoinstall",
+    "linux /casper/vmlinuz \"ds=nocloud-net;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/\" --- autoinstall",
     "<enter>",
     "initrd /casper/initrd",
     "<enter>",
