@@ -55,6 +55,13 @@ source "vmware-iso" "ubuntu-server-2204" {
   // https://developer.hashicorp.com/packer/plugins/builders/vmware/iso#output-configuration
   output_directory = "artifacts"
 
+  // VMX configuration
+  // https://developer.hashicorp.com/packer/plugins/builders/vmware/iso#vmx-configuration
+  vmx_data = {
+    "ethernet0.virtualdev" = "e1000e"
+    "usb_xhci.present"     = "true"
+  }
+
   // SSH configuration
   // https://developer.hashicorp.com/packer/plugins/builders/vmware/iso#optional-ssh-fields
   ssh_username = "vagrant"
