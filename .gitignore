@@ -3,3 +3,4 @@ output
 packer_cache
 artifacts
 .vagrant
+*.box
