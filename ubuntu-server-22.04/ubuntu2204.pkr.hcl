@@ -83,4 +83,10 @@ source "vmware-iso" "ubuntu-server-2204" {
 
 build {
   sources = ["sources.vmware-iso.ubuntu-server-2204"]
+
+  provisioner "shell" {
+    scripts = [
+      "scripts/post-install.sh"
+    ]
+  }
 }
