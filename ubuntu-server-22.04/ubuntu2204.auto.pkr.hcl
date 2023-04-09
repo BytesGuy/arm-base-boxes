@@ -1,4 +1,4 @@
-// centos9 packer variables file
+// ubuntu-server-22.04 packer variables file
 
 variable "vm_guest_os_language" {
   type        = string
