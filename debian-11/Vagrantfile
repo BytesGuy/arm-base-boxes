@@ -1,0 +1,11 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "debian-11-arm64"
+  config.vm.provider "vmware_desktop" do |v|
+    v.gui = true
+    v.vmx["ethernet0.virtualDev"] = "e1000e"
+    v.vmx["usb_xhci.present"] = "true"
+  end
+end
