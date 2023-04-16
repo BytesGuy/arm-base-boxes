@@ -10,8 +10,9 @@ This repository contains Packer files for building Vagrant base boxes for ARM ho
 
 | Distro          | Version | Provider      | Source                        |
 | --------------- | ------- | ------------- | ----------------------------- |
-| CentOS 9 Stream | 9       | VMware Fusion | [Source](centos-9)            |
+| CentOS Stream   | 9       | VMware Fusion | [Source](centos-9)            |
 | Ubuntu Server   | 22.04.2 | VMware Fusion | [Source](ubuntu-server-22.04) |
+| Debian          | 11      | VMware Fusion | [Source](debian-11)           |
 
 ## Dependencies
 
