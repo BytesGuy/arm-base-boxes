@@ -19,7 +19,11 @@ wget -O open-vm-tools.tgz https://packages.vmware.com/tools/open-vm-tools/ovt-ar
 tar -xf open-vm-tools.tgz
 # Install open-vm-tools
 sudo dpkg -i ./open-vm-tools_11.2.5-2debian10_arm64.deb && rm -f open-vm-tools*
-sudo apt-get install -f -y
+sudo apt-get install -f -y && sudo apt-get clean
+# Setup HGFS for VMware Tools Shared Folders Linux mounts
+# https://kb.vmware.com/s/article/60262
+sudo mkdir -pv /mnt/hgfs/
+sudo /usr/bin/vmhgfs-fuse .host:/ /mnt/hgfs/ -o subtype=vmhgfs-fuse,allow_other
 # Configure vagrant SSH key based authentication
 mkdir -pv /home/vagrant/.ssh
 chmod 700 /home/vagrant/.ssh
