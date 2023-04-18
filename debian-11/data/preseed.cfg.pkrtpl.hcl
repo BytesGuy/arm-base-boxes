@@ -218,7 +218,7 @@ tasksel tasksel/first multiselect standard
 #tasksel tasksel/first multiselect standard, kde-desktop
 
 # Individual additional packages to install
-d-i pkgsel/include string openssh-server sudo
+d-i pkgsel/include string openssh-server sudo fuse
 
 # Some versions of the installer can report back on what software you have
 # installed, and what software you use. The default is not to report back,

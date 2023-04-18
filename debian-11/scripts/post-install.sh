@@ -23,7 +23,7 @@ sudo apt-get install -f -y && sudo apt-get clean
 # Setup HGFS for VMware Tools Shared Folders Linux mounts
 # https://kb.vmware.com/s/article/60262
 sudo mkdir -pv /mnt/hgfs/
-sudo /usr/bin/vmhgfs-fuse .host:/ /mnt/hgfs/ -o subtype=vmhgfs-fuse,allow_other
+sudo /usr/bin/vmhgfs-fuse .host:/ /mnt/hgfs -o subtype=vmhgfs-fuse,allow_other
 # Configure vagrant SSH key based authentication
 mkdir -pv /home/vagrant/.ssh
 chmod 700 /home/vagrant/.ssh
