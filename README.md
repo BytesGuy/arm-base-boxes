@@ -8,11 +8,11 @@ This repository contains Packer files for building Vagrant base boxes for ARM ho
 
 ## Supported Boxes
 
-| Distro          | Version | Provider      | Source                        |
-| --------------- | ------- | ------------- | ----------------------------- |
-| CentOS Stream   | 9       | VMware Fusion | [Source](centos-9)            |
-| Ubuntu Server   | 22.04.2 | VMware Fusion | [Source](ubuntu-server-22.04) |
-| Debian          | 11      | VMware Fusion | [Source](debian-11)           |
+| Distro        | Version | Provider      | Source                        |
+| ------------- | ------- | ------------- | ----------------------------- |
+| CentOS Stream | 9       | VMware Fusion | [Source](centos-9)            |
+| Ubuntu Server | 22.04.2 | VMware Fusion | [Source](ubuntu-server-22.04) |
+| Debian        | 11      | VMware Fusion | [Source](debian-11)           |
 
 ## Dependencies
 
@@ -30,7 +30,7 @@ This repository contains Packer files for building Vagrant base boxes for ARM ho
     brew install --cask vagrant
     ```
 
-- [VMware Fusion](https://www.vmware.com/products/fusion.html)
+- [VMware Fusion](https://customerconnect.vmware.com/en/evalcenter?p=fusion-player-personal-13)
 - [Vagrant VMware Utility](https://formulae.brew.sh/cask/vagrant-vmware-utility):
 
     ```bash
