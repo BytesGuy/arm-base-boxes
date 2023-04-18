@@ -1,8 +1,8 @@
 # arm-base-boxes
 
-Vagrant base boxes for ARM hosts (e.g., Apple Silicon M1).
+VMware Fusion Vagrant base boxes for ARM hosts (e.g., Apple Silicon M1).
 
-This repository contains Packer files for building Vagrant base boxes for ARM hosts.
+This repository contains Packer files for building VMware Fusion based Vagrant base boxes for ARM hosts.
 
 🚨 These Vagrant boxes should not be used for production workloads - use them at your own risk! 🚨
 
