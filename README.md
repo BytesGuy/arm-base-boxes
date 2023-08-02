@@ -58,3 +58,7 @@ This repository contains Packer files for building VMware Fusion based Vagrant b
    ```
 
 Enjoy! ✨🚀
+
+## License
+
+[MIT](LICENSE)
