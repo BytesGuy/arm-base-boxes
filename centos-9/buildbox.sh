@@ -13,4 +13,4 @@ shasum -a 256 $BOX_NAME
 # Clean up
 rm -f *.v* *.nvram *.log *.scoreboard *.plist metadata.json
 # Add the box to Vagrant
-vagrant box add --force --name centos9-arm64 $BOX_NAME
+vagrant box add --force --name "centos9-arm64" $BOX_NAME
