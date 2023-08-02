@@ -1,3 +1,6 @@
 output
 .DS_Store
 packer_cache
+artifacts
+.vagrant
+*.box

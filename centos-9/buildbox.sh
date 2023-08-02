@@ -1,10 +1,16 @@
 #!/bin/bash
+BOX_NAME="centos9-arm64.box"
 
-# TODO: Pull and inject md5 hash into packer
-packer init vmware-centos9.pkr.hcl
-packer build -force vmware-centos9.pkr.hcl
-cp metadata.json output/metadata.json
-cd output
-tar cvzf vmware-centos9-arm64.box ./*
-md5 vmware-centos9-arm64.box
-rm -f *.v* *.nvram metadata.json
+# Initalise packer and build the VM
+packer init .
+packer build -force .
+# Copy Vagrant metadata file to artifacts directory
+cp metadata.json artifacts/metadata.json && cd artifacts
+# Create Vagrant box
+tar -cvzf $BOX_NAME ./*
+# Show the SHA256 checksum of the box
+shasum -a 256 $BOX_NAME
+# Clean up
+rm -f *.v* *.nvram *.log *.scoreboard *.plist metadata.json
+# Add the box to Vagrant
+vagrant box add --force --name "centos9-arm64" $BOX_NAME
