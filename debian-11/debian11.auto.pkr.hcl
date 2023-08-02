@@ -65,12 +65,12 @@ variable "disk_type_id" {
 variable "iso_checksum" {
   type        = string
   description = "ISO checksum"
-  default     = "file:http://cdimage.debian.org/debian-cd/current/arm64/iso-cd/SHA256SUMS"
+  default     = "file:https://cdimage.debian.org/mirror/cdimage/archive/11.6.0/arm64/iso-cd/SHA256SUMS"
 }
 
 variable "iso_url" {
   type    = string
-  default = "http://cdimage.debian.org/debian-cd/current/arm64/iso-cd/debian-11.6.0-arm64-netinst.iso"
+  default = "https://cdimage.debian.org/mirror/cdimage/archive/11.6.0/arm64/iso-cd/debian-11.6.0-arm64-netinst.iso"
 }
 
 // https://developer.hashicorp.com/packer/plugins/builders/vmware/iso#hardware-configuration
