@@ -11,6 +11,7 @@ The pre-built boxes can be found on [Vagrant Cloud](https://app.vagrantup.com/by
 
 | Distro | Version | Provider | Source | Box |
 | ------ | ------- | -------- | ------ | --- |
+| Ubuntu Server | 24.04.1 (Noble Numbat) | Vmware Fusion | [Source](ubuntu-server-24.04) | [bytesguy/ubuntu-server-24.04-arm64](https://portal.cloud.hashicorp.com/vagrant/discover/bytesguy/ubuntu-server-24.04-arm64)
 | Ubuntu Server | 20.04.3 (Focal Fossa) | VMWare Fusion | [Source](ubuntu-server-20.04/) | [bytesguy/ubuntu-server-20.04-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-20.04-arm64) |
 | Ubuntu Server | 20.04.3 (Focal Fossa) | Parallels | [Source](ubuntu-server-20.04/) | [bytesguy/ubuntu-server-20.04-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-20.04-arm64) |
 | Ubuntu Server | 21.10 (Impish Indri) | VMWare Fusion | [Source](ubuntu-server-21.10/) | [bytesguy/ubuntu-server-21.10-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-21.10-arm64) |
