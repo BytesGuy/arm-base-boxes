@@ -95,7 +95,7 @@ build {
   
   provisioner "shell" {
     scripts = [
-      "add-key.sh",
+      "../scripts/add-vagrant-key.sh",
       "../scripts/cleanup.sh"
     ]
   }

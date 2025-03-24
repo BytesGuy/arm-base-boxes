@@ -81,7 +81,7 @@ build {
   
   provisioner "shell" {
     scripts = [
-      "add-key.sh",
+      "../scripts/add-vagrant-key.sh",
       "../scripts/install-parallels-tools.sh",
       "../scripts/cleanup.sh"
     ]
