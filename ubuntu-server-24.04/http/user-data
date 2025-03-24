@@ -1,8 +1,6 @@
 #cloud-config
 autoinstall:
     version: 1
-    # early-commands:
-    #     - sudo systemctl stop ssh
     locale: en_US
     keyboard:
         layout: us
