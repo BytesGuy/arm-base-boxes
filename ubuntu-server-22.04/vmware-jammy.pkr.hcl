@@ -89,7 +89,8 @@ build {
   provisioner "shell" {
     scripts = [
       "../scripts/add-vagrant-key.sh",
-      "vmware-cleanup.sh"
+      "../scripts/cleanup.sh",
+      "../scripts/vmware-optimisation.sh"
     ]
   }
   
