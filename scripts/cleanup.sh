@@ -8,6 +8,12 @@ echo "Cleaning package cache..."
 if command -v apt-get &> /dev/null; then
     sudo apt-get clean
     sudo apt-get autoremove -y
+elif command -v dnf &> /dev/null; then
+    sudo dnf clean all
+    sudo dnf autoremove -y
+elif command -v yum &> /dev/null; then
+    sudo yum clean all
+    sudo yum autoremove -y
 fi
 
 # Clean log files
