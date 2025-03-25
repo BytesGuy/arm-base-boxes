@@ -5,21 +5,21 @@ echo "Starting system cleanup..."
 
 # Clean package cache
 echo "Cleaning package cache..."
-sudo apt-get clean
-sudo apt-get autoremove -y
-
-# Remove old kernels except the current one
-echo "Removing old kernels..."
-sudo dpkg -l 'linux-*' | sed '/^ii/!d;/'"$(uname -r | sed "s/\(.*\)-\([^0-9]\+\)/\1/")"'/d;s/^[^ ]* [^ ]* \([^ ]*\).*/\1/;/[0-9]/!d' | xargs sudo apt-get -y purge || true
+if command -v apt-get &> /dev/null; then
+    sudo apt-get clean
+    sudo apt-get autoremove -y
+fi
 
 # Clean log files
 echo "Cleaning log files..."
 sudo find /var/log -type f -name "*.log" -exec truncate -s 0 {} \;
 sudo find /var/log -type f -name "*.gz" -delete
 
-# Defrag filesystem
+# Defrag filesystem if e4defrag is available
 echo "Defragmenting filesystem..."
-sudo e4defrag / || true
+if command -v e4defrag &> /dev/null; then
+    sudo e4defrag / || true
+fi
 
 # Zero free space
 echo "Zeroing free space..."
