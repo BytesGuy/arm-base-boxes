@@ -28,6 +28,5 @@ The pre-built boxes can be found on [Vagrant Cloud](https://portal.cloud.hashico
 To build, enter the directory for the box you wish to build, then:
 
 1. Run `packer init` to install Packer plugins
-1. Run `packer build <box name>>.pkr.hcl`
-
+1. Run `packer build <box name>.pkr.hcl`
 The box file will be created in the `output` directory once the build has completed
