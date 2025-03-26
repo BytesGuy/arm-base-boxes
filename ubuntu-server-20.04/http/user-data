@@ -1,12 +1,9 @@
 #cloud-config
 autoinstall:
     version: 1
-    early-commands:
-        - sudo systemctl stop ssh
     locale: en_US
     keyboard:
-        layout: en
-        variant: us
+        layout: us
     identity:
         hostname: ubuntu
         username: vagrant
@@ -17,6 +14,7 @@ autoinstall:
     package_update: true
     package_upgrade: true
     packages: 
-        - open-vm-tools
+        - cloud-init
     late-commands:
         - echo 'vagrant ALL=(ALL) NOPASSWD:ALL' > /target/etc/sudoers.d/ubuntu
+        - chmod 440 /target/etc/sudoers.d/ubuntu
